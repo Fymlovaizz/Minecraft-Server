@@ -311,3 +311,29 @@
 [05-11 13:27:10]: [FINE] §7§aFymDaMidSite§7, §aKhoaDo§7.
 [05-11 13:27:10]: [FINE] FymDaMidSite logged in 127.0.0.1
 [05-11 13:27:29]: [INFO] AuthMe 5.7.0-SNAPSHOT-b2643 disabled!
+[05-11 14:57:48]: [INFO] SQLite Setup finished
+[05-11 14:57:48]: [INFO] No supported permissions system found! Permissions are disabled!
+[05-11 14:57:48]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[05-11 14:57:49]: [INFO] AuthMe 5.7.0-SNAPSHOT build n.2643 successfully enabled!
+[05-11 14:57:50]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[05-11 14:57:50]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[05-11 14:57:50]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[05-11 14:57:50]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[05-11 14:57:50]: java.io.FileNotFoundException: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+	at com.maxmind.db.BufferHolder.<init>(BufferHolder.java:19)
+	at com.maxmind.db.Reader.<init>(Reader.java:119)
+	at com.maxmind.geoip2.DatabaseReader.<init>(DatabaseReader.java:104)
+	at com.maxmind.geoip2.DatabaseReader$Builder.build(DatabaseReader.java:233)
+	at authme-5.7.0-SNAPSHOT.jar//fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:183)
+	at authme-5.7.0-SNAPSHOT.jar//fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:150)
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78)
+	at org.bukkit.craftbukkit.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57)
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
